@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
     {% load static %}
-
+  
 
   <!-- Favicons -->
   <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
@@ -65,29 +65,34 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#departments">Departments</a></li>
-            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="{% url 'departments' %}">Departments</a></li>
+            <li><a href="{% url 'doctors' %}">Doctors</a></li>
             <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <li><a href="#">Home</a></li>
+                <li  class="dropdown">
+                  <a href="#" ><span>Our Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
+                    <li><a href="#">General Medicine</a></li>
+                    <li><a href="#">Emergency Services</a></li>
+                    <li><a href="#">Surgical Services</a></li>
+                    <li><a href="#">Maternity Care</a></li>
+                    <li><a href="#">Pediatrics</a></li>
                   </ul>
                 </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
-            <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#"><span>Specialized Care</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Cardiology</a></li>
+                    <li><a href="#">Orthopedics</a></li>
+                    <li><a href="#">Neurology</a></li>
+                    <li><a href="#">Gastroenterology</a></li>
+                  </ul>
+                </li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -106,27 +111,35 @@
     <div class="page-title">
       <div class="heading">
         <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1 class="heading-title">Service Details</h1>
+          <div class="row d-flex justify-content-center text-center ">
+            <div  class="col-lg-8 ">
+              <div class="section-title" data-aos="fade-up">
+                <h2  >Service Details</h1>
               <p class="mb-0">
-                Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo
-                odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum
-                debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat
-                ipsum dolorem.
+                We offer a range of healthcare services to meet your needs. From emergency care to specialized treatments, our dedicated team ensures top-quality care for all patients.
               </p>
+              <br>
+              <p>
+                <strong>General Medicine:</strong> Comprehensive health check-ups, diagnostics, and treatment for various conditions.
+              </p>
+              <p>
+                <strong>Emergency Services:</strong> 24/7 urgent medical care for accidents, illnesses, and emergencies.
+              </p>
+              <p>
+                <strong>Surgical Services:</strong> A variety of surgical procedures with expert care before, during, and after surgery.
+              </p>
+              <p>
+                <strong>Maternity Care:</strong> Prenatal, childbirth, and postnatal care for mothers and newborns.
+              </p>
+              <p>
+                <strong>Pediatrics:</strong> Health services for children, including vaccinations, growth monitoring, and treatment for illnesses.
+              </p>
+              
             </div>
           </div>
         </div>
       </div>
-      <nav class="breadcrumbs">
-        <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Service Details</li>
-          </ol>
-        </div>
-      </nav>
+    
     </div><!-- End Page Title -->
 
     <!-- Service Details Section -->
@@ -136,36 +149,31 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="services-list">
-              <a href="#" class="active">Web Design</a>
-              <a href="#">Software Development</a>
-              <a href="#">Product Management</a>
-              <a href="#">Graphic Design</a>
-              <a href="#">Marketing</a>
-            </div>
 
-            <h4>Enim qui eos rerum in delectus</h4>
-            <p>Nam voluptatem quasi numquam quas fugiat ex temporibus quo est. Quia aut quam quod facere ut non occaecati ut aut. Nesciunt mollitia illum tempore corrupti sed eum reiciendis. Maxime modi rerum.</p>
-          </div>
+          <h4>Expert Medical Care</h4>
+<p>We provide comprehensive medical services with a focus on patient well-being. Our dedicated team ensures the highest standard of care across various specialties, including emergency services, surgery, and pediatric care. Trust us for compassionate and professional health services, tailored to meet your needs.</p>
 
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-            <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3>
-            <p>
-              Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Aut eum totam accusantium voluptatem.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
-            </ul>
-            <p>
-              Est reprehenderit voluptatem necessitatibus asperiores neque sed ea illo. Deleniti quam sequi optio iste veniam repellat odit. Aut pariatur itaque nesciunt fuga.
-            </p>
-            <p>
-              Sunt rem odit accusantium omnis perspiciatis officia. Laboriosam aut consequuntur recusandae mollitia doloremque est architecto cupiditate ullam. Quia est ut occaecati fuga. Distinctio ex repellendus eveniet velit sint quia sapiente cumque. Et ipsa perferendis ut nihil. Laboriosam vel voluptates tenetur nostrum. Eaque iusto cupiditate et totam et quia dolorum in. Sunt molestiae ipsum at consequatur vero. Architecto ut pariatur autem ad non cumque nesciunt qui maxime. Sunt eum quia impedit dolore alias explicabo ea.
-            </p>
+
+<div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+  <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
+  <h3>Comprehensive Medical Services for Your Health and Well-Being</h3>
+  <p>
+    Our hospital is dedicated to providing expert care in a variety of medical fields, ensuring that you receive the best treatment for your needs. From emergency services to specialized treatments, we are here to support you with advanced medical technology and compassionate care.
+  </p>
+</div>
+
+<ul>
+  <li><i class="bi bi-check-circle"></i> <span>Comprehensive medical care for all age groups.</span></li>
+  <li><i class="bi bi-check-circle"></i> <span>24/7 emergency services for immediate attention.</span></li>
+  <li><i class="bi bi-check-circle"></i> <span>Advanced diagnostic and treatment options available.</span></li>
+</ul>
+<p>
+  We provide personalized care to ensure the well-being of our patients, using state-of-the-art equipment and highly trained medical professionals. Our goal is to deliver the best possible outcomes for our patients.
+</p>
+<p>
+  Our hospital is equipped with a range of services to meet diverse health needs, from routine check-ups to specialized surgeries. We strive to create a caring and supportive environment for patients and their families. Whether you need urgent care or ongoing medical management, we are here to help.
+</p>
+
           </div>
 
         </div>

@@ -1,0 +1,33 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+
+{% block body %}
+<section id="about" class="about section">
+    <div class="container section-title" data-aos="fade-up">
+        <h2>About Us</h2>
+        <p>Dedicated to providing compassionate and comprehensive healthcare services.</p>
+    </div>
+
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+                <img src="{% static 'assets\img\steth.jpg' %}" class="img-fluid" alt="About our hospital">
+            </div>
+            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                <h3>Providing Quality Healthcare with Compassion and Integrity</h3>
+                <p class="fst-italic">
+                    Our hospital is committed to delivering exceptional care to every patient with a focus on improving community health and wellness.
+                </p>
+                <ul>
+                    <li><i class="bi bi-check2-all"></i> <span>State-of-the-art facilities and advanced medical technology.</span></li>
+                    <li><i class="bi bi-check2-all"></i> <span>Highly trained staff committed to patient-centered care.</span></li>
+                    <li><i class="bi bi-check2-all"></i> <span>Comprehensive healthcare services ranging from preventive care to advanced treatment options.</span></li>
+                </ul>
+                <p>
+                    We strive to provide a welcoming environment where patients and their families feel supported throughout their healthcare journey. Our commitment to excellence, compassion, and continuous improvement guides everything we do.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,101 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+
+{% block body %}
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors section light-background">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Our Doctors</h2>
+          <p>Meet our dedicated and highly skilled medical professionals who provide top-notch care and treatment across various specialties. Our doctors are committed to your health and well-being.</p>
+        </div><!-- End Section Title -->
+  
+        <div class="container">
+  
+          <div class="row gy-4">
+  
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="team-member">
+                <div class="member-img">
+                  <img src="{% static 'assets\img\dr walter.jpg' %}" class="img-fluid" alt="Dr. Walter White" >
+
+                  <div class="social">
+                    <a href="https://twitter.com/yourprofile"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://facebook.com/yourprofile"><i class="bi bi-facebook"></i></a>
+                    <a href="https://instagram.com/yourprofile"><i class="bi bi-instagram"></i></a>
+                    <a href="https://linkedin.com/in/yourprofile"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Dr. Walter White</h4>
+                  <span>Chief Medical Officer</span>
+                  <p>Dr. White has over 20 years of experience in medical leadership and clinical care. He specializes in complex medical diagnostics and treatment strategies.</p>
+                </div>
+              </div>
+            </div><!-- End Team Member -->
+  
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+              <div class="team-member">
+                <div class="member-img">
+                  <img src="{% static 'assets\img\dr sarah.jpg' %}" class="img-fluid" alt="Dr. Sarah Jhonson">
+                  <div class="social">
+                    <a href="https://twitter.com/yourprofile"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://facebook.com/yourprofile"><i class="bi bi-facebook"></i></a>
+                    <a href="https://instagram.com/yourprofile"><i class="bi bi-instagram"></i></a>
+                    <a href="https://linkedin.com/in/yourprofile"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Dr. Sarah Jhonson</h4>
+                  <span>Anesthesiologist</span>
+                  <p>Dr. Jhonson specializes in administering anesthesia during surgeries. With her expertise, she ensures patient safety and comfort throughout procedures.</p>
+                </div>
+              </div>
+            </div><!-- End Team Member -->
+  
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+              <div class="team-member">
+                <div class="member-img">
+                  <img src="{% static 'assets\img\dr william.jpg' %}" class="img-fluid" alt="Dr. William Anderson">
+                  <div class="social">
+                    <a href="https://twitter.com/yourprofile"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://facebook.com/yourprofile"><i class="bi bi-facebook"></i></a>
+                    <a href="https://instagram.com/yourprofile"><i class="bi bi-instagram"></i></a>
+                    <a href="https://linkedin.com/in/yourprofile"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Dr. William Anderson</h4>
+                  <span>Cardiologist</span>
+                  <p>Dr. Anderson is a leading cardiologist with a focus on heart disease prevention, diagnosis, and treatment. His approach integrates cutting-edge technology and compassionate care.</p>
+                </div>
+              </div>
+            </div><!-- End Team Member -->
+  
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+              <div class="team-member">
+                <div class="member-img">
+                  <img src="{% static 'assets\img\amanda.jpg' %}" class="img-fluid" alt="Dr. Amanda Jepson">
+                  <div class="social">
+                    <a href="https://twitter.com/yourprofile"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://facebook.com/yourprofile"><i class="bi bi-facebook"></i></a>
+                    <a href="https://instagram.com/yourprofile"><i class="bi bi-instagram"></i></a>
+                    <a href="https://linkedin.com/in/yourprofile"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Dr. Amanda Jepson</h4>
+                  <span>Neurosurgeon</span>
+                  <p>Dr. Jepson is a renowned neurosurgeon, specializing in brain and spine surgeries. With a wealth of experience, she provides patients with the best outcomes in neurological care.</p>
+                </div>
+              </div>
+            </div><!-- End Team Member -->
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- /Doctors Section -->
+  
+{% endblock %}
