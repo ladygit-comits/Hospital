@@ -1,3 +1,4 @@
+import os
 import requests
 import json
 from requests.auth import HTTPBasicAuth
@@ -6,8 +7,8 @@ import base64
 
 
 class MpesaC2bCredential:
-    consumer_key = 'fx0yQwQVlCG9YalwioP3zT3Jols5Bi1KG0oMrP1rPEAkh1eJ'
-    consumer_secret = 'yAV6kNB7GTExL4K6GIlKQ6xB2FPYaMItXhw0AMTVn8mqNGaqjD8WoEsddAuhlUX5'
+    consumer_key = os.getenv('MPESA_CONSUMER_KEY')
+    consumer_secret =os.getenv('MPESA_CONSUMER_SECRET')
     api_URL = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials'
 
 
